@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Dhananjay Kulkarni</title>
+  <!-- Add Bootstrap CSS link here -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+    }
+
+    .nav-link:hover {
+      color: #ffcc00;
+    }
+
+    .project-box {
+      background-color: #333;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Dhananjay Kulkarni</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacts.html">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5" id="projects">
+    <h1>Projects</h1>
+    <div class="project-box">
+      <h2>iCoderBootstrap Deployment</h2>
+      <ul>
+        <li>Deployed Bootstrap application on AWS EC2 using Jenkins pipeline.</li>
+        <li>Implemented a 3-stage pipeline: code, build, test, and deploy.</li>
+        <li>Utilized Docker and Docker Compose for packaging.</li>
+        <li>Automated deployment using Jenkins.</li>
+      </ul>
+    </div>
+
+    <div class="project-box">
+      <h2>Building a Scalable Kubernetes Cluster on AWS with MiniKube</h2>
+      <ul>
+        <li>Built Kubernetes Cluster on AWS with MiniKube.</li>
+        <li>Managed Docker Containers for Django app in Kubernetes Pods.</li>
+        <li>Enabled Deployment, Replication, Auto healing, and Auto scaling.</li>
+        <li>Managed Network and Services with Host IP allocation on AWS EC2.</li>
+      </ul>
+    </div>
+
+    <div class="project-box">
+      <h2>Ansible Project: Automating Infrastructure Deployment</h2>
+      <ul>
+        <li>Automated Nginx deployment and solar system-themed webpage with Ansible.</li>
+        <li>Provisioned Nginx on EC2 instances for an immersive user experience.</li>
+        <li>Customized Ansible playbook for flexible deployment.</li>
+        <li>Installed Nginx and deployed captivating solar system webpage.</li>
+        <li>Documented project details in a comprehensive blog post.</li>
+      </ul>
+    </div>
+
+    <div class="project-box">
+      <h2>Terraform Hands-on Project - Build Your Own AWS Infrastructure</h2>
+      <ul>
+        <li>Built AWS infrastructure with Terraform and Infrastructure as Code (IaC).</li>
+        <li>Created a Virtual Private Cloud (VPC) with CIDR block 10.0.0.0/16.</li>
+        <li>Established public and private subnets within the VPC.</li>
+        <li>Configured Internet Gateway (IGW) for internet access.</li>
+        <li>Launched EC2 instance, installed Apache, and hosted a website.</li>
+      </ul>
+    </div>
+  </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-3">
+        <div class="container">
+          <p>&copy; 2023 Dhananjay Kulkarni. All rights reserved.</p>
+        </div>
+      </footer>
+    
+  <!-- Add Bootstrap JS and jQuery scripts here -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhananjay Kulkarni - Portfolio</title>
+  <!-- Add Bootstrap CSS link here -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+    }
+
+    .nav-link:hover {
+      color: #ffcc00;
+    }
+
+    .social-icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+
+    .project-box {
+      background-color: #333;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .skill-box {
+        background-color: #696363;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Set a fixed height to maintain consistency */
+        height: 200px;
+      }
+  
+      .skill-icon {
+        /* Reduce font size to adjust for fixed height */
+        font-size: 36px;
+        /* Vertically center the icon */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* Set a fixed height to ensure the icons have the same size */
+        height: 100px;
+      }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Dhananjay Kulkarni</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacts.html">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5" id="home">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="https://avatars.githubusercontent.com/u/125235866?v=4" class="img-fluid rounded-circle"
+          alt="Profile Picture" style="max-width: 150px;">
+      </div>
+      <div class="col-md-9">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Driven to learn, contribute, and optimize development workflows. Excels in automation, documentation, and
+          applying DevOps tools. Seeking hands-on experience to make a positive impact.</p>
+        <div>
+          <a href="https://github.com/Dhananjaykul" target="_blank" class="btn btn-primary mr-2">
+            <img src="data:image/jpeg;base64,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" alt="GitHub" class="social-icon">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/dhananjay-kulkarni-ba54a81b0/" target="_blank" class="btn btn-primary mr-2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHYMHUFD1JZy1UvHGqh-lSATLKtHwr64Uivg&usqp=CAU" alt="LinkedIn" class="social-icon">
+            LinkedIn
+          </a>
+          <a href="https://dhananjaykulkarni.hashnode.dev/" target="_blank" class="btn btn-primary">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReSSIf9UyDQUaafhHdEmxyP9sMjeb9ypHPWt7NXJUDuQ&s" alt="Hashnode" class="social-icon">
+            My Blogs
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Blocks -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="project-box bg-dark text-white p-4 mb-4">
+          <h2>iCoderBootstrap Deployment</h2>
+          <ul>
+            <li>Deployed Bootstrap application on AWS EC2 using Jenkins pipeline.</li>
+            <li>Implemented a 3-stage pipeline: code, build, test, and deploy.</li>
+            <li>Utilized Docker and Docker Compose for packaging.</li>
+            <li>Automated deployment using Jenkins.</li>
+          </ul>
+        </div>
+        <div class="project-box bg-dark text-white p-4 mb-4">
+          <h2>Building a Scalable Kubernetes Cluster on AWS with MiniKube</h2>
+          <ul>
+            <li>Built Kubernetes Cluster on AWS with MiniKube.</li>
+            <li>Managed Docker Containers for Django app in Kubernetes Pods.</li>
+            <li>Enabled Deployment, Replication, Auto healing, and Auto scaling.</li>
+            <li>Managed Network and Services with Host IP allocation on AWS EC2.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="project-box bg-dark text-white p-4 mb-4">
+              <h2>Ansible Project: Automating Infrastructure Deployment</h2>
+              <ul>
+                <li>Automated Nginx deployment and solar system-themed webpage with Ansible.</li>
+                <li>Provisioned Nginx on EC2 instances for an immersive user experience.</li>
+                <li>Customized Ansible playbook for flexible deployment.</li>
+                <li>Installed Nginx and deployed captivating solar system webpage.</li>
+                <li>Documented project details in a comprehensive blog post.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="project-box bg-dark text-white p-4 mb-4">
+              <h2>Terraform Hands-on Project - Build Your Own AWS Infrastructure</h2>
+              <ul>
+                <li>Built AWS infrastructure with Terraform and Infrastructure as Code (IaC).</li>
+                <li>Created a Virtual Private Cloud (VPC) with CIDR block 10.0.0.0/16.</li>
+                <li>Established public and private subnets within the VPC.</li>
+                <li>Configured Internet Gateway (IGW) for internet access.</li>
+                <li>Launched EC2 instance, installed Apache, and hosted a website.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Skills Section -->
+  <div class="container mt-5" id="skills">
+    <h2>Skills</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="skill-box">
+          <img src="https://editor.analyticsvidhya.com/uploads/18288git.jpg" alt="Git and GitHub" class="skill-icon">
+          <p>Git, GitHub</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="skill-box">
+          <img src="https://w7.pngwing.com/pngs/991/165/png-transparent-docker-hd-logo-thumbnail.png" alt="Docker"
+            class="skill-icon">
+          <p>Docker</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="skill-box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST4v1brbC4Wdt_OOUFsviw0UHD4WbV2vgmx47Tf40&s"
+            alt="Ansible" class="skill-icon">
+          <p>Ansible</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="skill-box">
+          <img src="https://www.metaltoad.com/sites/default/files/styles/large_personal_photo_870x500_/public/2020-05/aws-logo-blog-header.png?itok=t4o3meiH"
+            alt="AWS" class="skill-icon">
+          <p>AWS</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-3">
+        <div class="skill-box">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/2109px-Kubernetes_logo_without_workmark.svg.png"
+            alt="Kubernetes" class="skill-icon">
+          <p>Kubernetes</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="skill-box">
+          <img src="https://sue.eu/wp-content/uploads/sites/6/2022/06/terraform-hashicorp-logo-920x920-sue-v5-300x300.png"
+            alt="Terraform" class="skill-icon">
+          <p>Terraform</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="skill-box">
+          <img src="https://www.nginx.com/wp-content/uploads/2015/10/nginx-vs-apache_featured.png" alt="Servers"
+            class="skill-icon">
+          <p>Nginx, Apache</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="skill-box">
+          <img src="https://w7.pngwing.com/pngs/112/603/png-transparent-shell-script-command-line-interface-unix-shell-bash-shell-angle-commandline-interface-nuvola.png"
+            alt="Linux and Shell Scripting" class="skill-icon">
+          <p>Linux, Shell Scripting</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-3">
+          <div class="skill-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFVaGsM_nguQoKy6d4pAMOgVgBFc5UN-8-XhhJAJVLF5Cy6_PxM7FtnP5wQY8UbL1F2Jw&usqp=CAU"
+              alt="Jenkins" class="skill-icon">
+            <p>Jenkins</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="skill-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWE_1NSkjZlqe8Y0Vmyet_HCo4l-UA4C7nbAmphyMs1726I95t3Wdi8Op8RmRiO5sfjZE&usqp=CAU"
+              alt="DevOps Methodologies" class="skill-icon">
+            <p>DevOps Methodologies</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white py-3">
+    <div class="container">
+      <p>&copy; 2023 Dhananjay Kulkarni. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Add Bootstrap JS and jQuery scripts here -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
