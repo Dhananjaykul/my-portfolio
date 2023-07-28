@@ -1,4 +1,3 @@
-```
 # Project-7: Deploying a Portfolio App on AWS S3 using GitHub Actions 🚀
 
 [![Blog Link](https://img.shields.io/badge/Blog-Read%20More-blueviolet)](https://dhananjaykulkarni.hashnode.dev/project-7-deploying-a-portfolio-app-on-aws-s3-using-github-actions)
@@ -32,4 +31,3 @@ To get started with the deployment, follow these steps:
 By the end of this project, you'll have your Portfolio app hosted on AWS S3, accessible through GitHub Actions' CI/CD pipeline. Embrace automation, showcase your projects, and improve your web development skills!
 
 Happy coding! 🚀🌟
-```
